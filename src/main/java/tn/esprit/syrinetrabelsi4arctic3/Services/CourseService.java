@@ -1,5 +1,6 @@
 package tn.esprit.syrinetrabelsi4arctic3.Services;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.esprit.syrinetrabelsi4arctic3.Entity.Course;
@@ -8,9 +9,10 @@ import tn.esprit.syrinetrabelsi4arctic3.Repos.CourseRepository;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class CourseService implements  ICourseService{
 
-    @Autowired
+
     private CourseRepository courseRepository;
     @Override
     public Course addCourse(Course c) {

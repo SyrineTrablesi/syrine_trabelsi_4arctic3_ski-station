@@ -11,4 +11,9 @@ public interface IRegistrationService {
     Registration retrieveRegistration(Long numRegistration);
     void deleteRegistration(Long numRegistration);
     List<Registration> retrieveAll();
+    Registration addRegistrationAndAssignToSkier(
+            Registration registration, Long numSkieur
+    );
+
+
 }

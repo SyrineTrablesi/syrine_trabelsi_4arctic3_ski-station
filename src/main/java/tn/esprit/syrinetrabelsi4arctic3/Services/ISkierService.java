@@ -6,7 +6,8 @@ import java.util.List;
 public interface ISkierService {
     Skier addSkier(Skier s);
     Skier update(Skier s);
-    Skier retrieveSkier(int numSkier);
-    void deleteSkier(int numSkier);
+    Skier retrieveSkier(long numSkier);
+    void deleteSkier(long numSkier);
     List<Skier> retrieveAll();
+    Skier addSkierAndAssignToCourse(Skier skier, Long numCourse);
 }

@@ -39,4 +39,12 @@ public class SkierController {
         skierService.deleteSkier(numSkier);
     }
 
+
+
+    @PostMapping("add-skierCourse/{numCourse}")
+    public Skier addSkierAndAssignToCourse(@RequestBody  Skier skier, @PathVariable(name = "numCourse") Long numCourse){
+        return skierService.addSkierAndAssignToCourse(skier, numCourse);
+    }
+
+
 }

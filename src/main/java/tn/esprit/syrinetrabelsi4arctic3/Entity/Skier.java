@@ -35,7 +35,7 @@ public class Skier implements Serializable{
     List<Registration> registrations;
 
     @OneToOne(cascade = {CascadeType.PERSIST , CascadeType.REMOVE})
-    Subscription S;
+    Subscription subscription;
 
     @ManyToMany(mappedBy = "skiers")
     Set<Piste> pistes;

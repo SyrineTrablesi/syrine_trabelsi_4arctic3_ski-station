@@ -40,6 +40,13 @@ public class PisteController {
         pisteServices.deletePiste(numPiste);
     }
 
+    @PostMapping("assignSkierToPiste/{numSkier}/{numPiste}")
+    public Piste assignSkierToPiste(
+            @PathVariable Long numSkier,
+            @PathVariable Long numPiste
+    ) {
+        return pisteServices.assignSkierToPiste(numSkier, numPiste);
+    }
 }
 
 

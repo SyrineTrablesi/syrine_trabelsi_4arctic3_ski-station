@@ -40,6 +40,13 @@ public class RegistrationController {
         regService.deleteRegistration(numRegistration);
     }
 
+    @PostMapping("addRegSkier/{numSkier}")
+    public Registration addRegistrationAndAssignToSkier(
+            @RequestBody Registration registration,
+            @PathVariable(name = "numSkier") Long numSkier
+    ) {
+        return regService.addRegistrationAndAssignToSkier(registration, numSkier);
+    }
 
 
 
