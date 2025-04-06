@@ -10,6 +10,8 @@ public interface INinstructor {
     Instructor retrieveInstructor(Long numInstructor);
     void deleteInstructor(Long numInstructor);
     List<Instructor> retrieveAll();
+    //tp5
     Instructor addInstructorAndAssignToCourse(Instructor instructor, Long
             numCourse);
+
 }

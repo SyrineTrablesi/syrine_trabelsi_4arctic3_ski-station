@@ -49,5 +49,13 @@ public class RegistrationController {
     }
 
 
+    // tP 5 : page 15 :
+
+    @PostMapping ("assignRegistrationToCourse/{numReg}/{numCourse}")
+    public Registration assignRegistrationToCourse( @PathVariable long numReg, @PathVariable long numCourse){
+        return regService.assignRegistrationToCourse(numReg, numCourse);
+    }
+
+
 
 }

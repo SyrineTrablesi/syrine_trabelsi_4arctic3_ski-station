@@ -14,6 +14,7 @@ public interface IRegistrationService {
     Registration addRegistrationAndAssignToSkier(
             Registration registration, Long numSkieur
     );
-
-
+    //tp5
+    Registration assignRegistrationToCourse(Long numRegistration, Long numCourse);
+    Registration addRegistrationAndAssignToSkierAndCourse(Registration registration, Long numSkier, Long numCourse);
 }
